@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;600;700&display=swap');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn';
+    background: #FCD200;
+    background: linear-gradient(135deg, #FCD200, #E0BF2D);
+}
+
+:root {
+    --black: #2d3436;
+    --gray: #636e72;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    width: 60vw;
+    height: 60vh;
+    color: #fff;
+    padding: 1rem;
+    background: linear-gradient(135deg, var(--black), var(--gray));
+    border-radius: 0.2rem;
+}
+
+.btn a {
+    margin-top: 1rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0.2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    background: #C5052F;
+    background: linear-gradient(135deg, #C5052F, #AA172B);
+}
+
+.social ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.social ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: var(--gray);
+    padding: 0.2rem 1.5rem 0.2rem 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.social ul li img {
+    width: 3rem;
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    transition: all 0.5s ease;
+}
+
+.social ul li img:hover , .social ul li:hover img{
+    -webkit-filter: grayscale(0);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    transition: all 0.5s ease;
+}
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 80vw;
+        height: 80vh;
+    }
+    .social ul li a{
+        flex-direction: column;
+    }
+    .social ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    .social ul li a {
+        padding: 0.2rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        width: 90vw;
+        height: 90vh;
+    }
+}
