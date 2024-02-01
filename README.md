@@ -1,1 +1,1 @@
-# This project has been developed specifically for our valued customer to meet their unique requirements and preferences.
+A landing page that says we are out of service 
